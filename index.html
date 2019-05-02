@@ -8,18 +8,24 @@
 			background-color: #fabada;
 			color: #000000;
 		}
+		[data-ingrediente] {
+			background-color: red;
+			color: yellow;
+		}
+		[data-ingrediente="arroz"]::after {
+			content: "🍚"
+		}
 	</style>
 </head>
 
 <body>
-	<h1>Esto es una prueba</h1>
+	<h1>Esto es una <span data-ingrediente="arroz" data-size="100g">echar arroz</span></h1>
 	<ul>
-		<li>Miyuki</li>
-		<li>Naomi</li>
-		<li>Olivia</li>
-		<li>Fran</li>
+		<li  data-number="a elem 1 b">Miyuki</li>
+		<li  data-number="a elem 2 c">Naomi</li>
+		<li  data-number="elem 3">Olivia</li>
+		<li  data-number="elem 4">Fran</li>
 	</ul>
-
 </body>
 
 </html>
